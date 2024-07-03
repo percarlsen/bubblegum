@@ -24,6 +24,8 @@
 - Parcel module bundler
 - Chart.js for the charts
 
+## Demo
+![Demo](demo.png)
 
 ## TODOs
 - Swap out the scatter plot with a bubble plot.
