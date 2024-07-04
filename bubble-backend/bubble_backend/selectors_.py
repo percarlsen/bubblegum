@@ -5,5 +5,6 @@ def get_data_matrix() -> list[tuple[float | None, float | None, float]]:
     """
     Get the matrix data.
     """
+    # Filter away None values
     return read_data(DATA_PATH)["rows"][0]["values"]
 

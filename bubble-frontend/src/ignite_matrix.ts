@@ -48,7 +48,7 @@ import Chart, { ChartItem } from 'chart.js/auto'
 interface MatrixData {
   x: number;
   y: number;
-  value: number;
+  value: number; // total_spend
 }
 
 async function getMatrixData(): Promise<MatrixData[]> {
@@ -57,7 +57,7 @@ async function getMatrixData(): Promise<MatrixData[]> {
     throw new Error('Failed to fetch data')
   }
 
-  const data = await res.json();
+  const data = await res.json(); // [[1,2,3], ...]
   // Mapping to make the consumption of this function a bit nicer. Could consider moving this to the backend to avoid the added iteration here.
   return data.map((i: any[]) => {return {'x': i[1], 'y': i[0], 'value': i[2]}});
 }
