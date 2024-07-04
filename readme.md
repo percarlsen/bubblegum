@@ -34,6 +34,3 @@
   - X-axis is share of wallet: share of budget spent on this supplier within its category
   - Scalar is total spend
 - Python setup lint on save
-
-
-https://python.land/create-a-python-rest-api
