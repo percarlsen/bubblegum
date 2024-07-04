@@ -10,6 +10,7 @@
 
 ### Stack
 - Python + Django + FastAPI
+- Poetry
 
 
 ## Frontend
