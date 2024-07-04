@@ -24,4 +24,6 @@ def read_root():
 
 @app.get("/data-matrix")
 def read_data_matrix():
-    return get_data_matrix()
+    # return get_data_matrix()
+    matrix = get_data_matrix()
+    return [[i.ebit_margin, i.share_of_wallet, i.total_spend] for i in matrix.values()]
