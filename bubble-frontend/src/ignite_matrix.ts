@@ -15,7 +15,7 @@ import Chart, { ChartItem } from 'chart.js/auto'
     type: 'scatter',
     data: {
       datasets: [{
-        data: [...data.map((i) => {return {x: i.x, y: i.y}})],
+        data: [...data.map((i) => {return {x: i.x * 100, y: i.y * 100}})],
         borderWidth: 1
       }]
     },
@@ -27,9 +27,18 @@ import Chart, { ChartItem } from 'chart.js/auto'
       },
       animation: false,
       scales: {
+        x: {
+          title: {
+            display: true,
+            text: 'Share of wallet'
+          }
+        },
         y: {
-          beginAtZero: true
-        }
+          title: {
+            display: true,
+            text: 'EBIT margin (%)'
+          }
+        },
       }
     }
   });

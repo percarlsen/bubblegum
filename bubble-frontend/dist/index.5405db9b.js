@@ -600,8 +600,8 @@ var _autoDefault = parcelHelpers.interopDefault(_auto);
                     data: [
                         ...data.map((i)=>{
                             return {
-                                x: i.x,
-                                y: i.y
+                                x: i.x * 100,
+                                y: i.y * 100
                             };
                         })
                     ],
@@ -617,8 +617,17 @@ var _autoDefault = parcelHelpers.interopDefault(_auto);
             },
             animation: false,
             scales: {
+                x: {
+                    title: {
+                        display: true,
+                        text: "Share of wallet"
+                    }
+                },
                 y: {
-                    beginAtZero: true
+                    title: {
+                        display: true,
+                        text: "EBIT margin (%)"
+                    }
                 }
             }
         }
