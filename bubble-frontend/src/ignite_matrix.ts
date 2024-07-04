@@ -30,7 +30,7 @@ import Chart, { ChartItem } from 'chart.js/auto'
         x: {
           title: {
             display: true,
-            text: 'Share of wallet'
+            text: 'Share of wallet (%)'
           }
         },
         y: {
