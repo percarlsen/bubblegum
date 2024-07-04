@@ -30,9 +30,9 @@
 ## TODOs
 - Swap out the scatter plot with a bubble plot.
 - Understand data. Why rows and columns, duplicate?
-  - Y-axis is EBIT margin
-  - X-axis is share of wallet (what's this?)
-  - Scalar is total spend (?)
+  - Y-axis is EBIT margin: share of gross income that will be retained by the company as profit. (sales - cogs - operating expenses) / sales
+  - X-axis is share of wallet: share of budget spent on this supplier within its category
+  - Scalar is total spend
 - Python setup lint on save
 
 
