@@ -26,4 +26,4 @@ def read_root():
 def read_data_matrix():
     # return get_data_matrix()
     matrix = get_data_matrix()
-    return [[i.ebit_margin, i.share_of_wallet, i.total_spend] for i in matrix.values()]
+    return [[i.ebit_margin, i.share_of_wallet, i.total_spend, i.name] for i in matrix.values()]
